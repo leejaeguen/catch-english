@@ -42,17 +42,39 @@ body {
     font-size: 14px;
 }
 
-.login-button {
+.button-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.login-button, .signup-button {
     width: 150px;
     padding: 10px;
-    background-color: #FFD700; 
-    color: black;
-    border: none;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.login-button {
+    background-color: #FFD700;
+    color: black;
+    border: none;
+}
+
+.signup-button {
+    background-color: #E0E0E0;
+    color: black;
+    border: none;
 }
 
 .login-button:hover {
-    background-color: #FFCC00;   
+    background-color: #FFCC00;
+}
+
+.signup-button:hover {
+    background-color: #CCCCCC;
 }
